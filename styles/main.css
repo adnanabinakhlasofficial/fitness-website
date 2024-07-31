@@ -12,8 +12,6 @@
     --white-60: #FFFFFF99;
     --black-color: #000000;
     --bg-dark: #222222;
-    --bg-one: #111111;
-    --bg-two: #77777700;
     --heading: 4.875rem;
     --title: 3rem;
     --sub-title: 1.75rem;
@@ -29,8 +27,14 @@
     font-family: var(--font-primary);
 }
 
-body{
+body {
     background-color: var(--black-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 90rem;
+    margin-inline: auto;
 }
 
 .banner-heading {
@@ -50,4 +54,58 @@ body{
     font-size: var(--description);
 }
 
+a {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem 2.5rem;
+    border-radius: 2.625rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
 /* Universal Styles End */
+
+/* Navbar Styles Start */
+
+header {
+    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.125rem;
+}
+
+nav h2 {
+    color: var(--primary-color);
+    font-size: 2.25rem;
+    font-style: italic;
+    font-weight: 800;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav ul a {
+    color: var(--white-color);
+}
+
+nav ul li.btn-primary{ 
+    padding: 0.5rem 1.5rem;
+}
+
+nav i.fa-bars {
+    display: none;
+}
+
+/* Navbar Styles End */
