@@ -1,0 +1,53 @@
+/* Inter Font CDN Embed */
+@import url('https://fonts.cdnfonts.com/css/inter?styles=169530,29139,29134,29142,29143,29132,29133,29135,29136,29137,29138,29140,29141,29128,29129,29130,29131,29126,29127');
+/* Miama Font CDN Embed */
+@import url('https://fonts.cdnfonts.com/css/miama?styles=170364,627');
+
+/* Universal Styles Start */
+:root {
+    --primary-color: #E6533C;
+    --white-color: #FFFFFF;
+    --white-10: #FFFFFF1A;
+    --white-50: #FFFFFF80;
+    --white-60: #FFFFFF99;
+    --black-color: #000000;
+    --bg-dark: #222222;
+    --bg-one: #111111;
+    --bg-two: #77777700;
+    --heading: 4.875rem;
+    --title: 3rem;
+    --sub-title: 1.75rem;
+    --description: 0.875rem;
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Miama', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+body{
+    background-color: var(--black-color);
+}
+
+.banner-heading {
+    color: var(--white-color);
+    font-size: var(--heading);
+    font-weight: 900;
+}
+
+.title {
+    color: var(--white-color);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.description {
+    color: var(--white-50);
+    font-size: var(--description);
+}
+
+/* Universal Styles End */
