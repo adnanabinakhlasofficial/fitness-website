@@ -12,6 +12,7 @@
     --white-60: #FFFFFF99;
     --black-color: #000000;
     --bg-dark: #222222;
+    --bg-dark2: #444444;
     --heading: 4.875rem;
     --title: 3rem;
     --sub-title: 1.75rem;
@@ -67,6 +68,12 @@ section {
 
 a {
     text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--primary-color) !important;
 }
 
 .btn-primary {
@@ -106,11 +113,18 @@ nav ul {
     display: flex;
     gap: 2rem;
     align-items: center;
+    border: 1px solid var(--white-10);
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px;
 }
 
 nav ul a {
     color: var(--white-color);
 }
+
+nav ul li:first-child a:hover {
+    color: var(--white-color) !important;
+} 
 
 nav ul li.btn-primary {
     padding: 0.3rem 1.1rem;
@@ -328,10 +342,12 @@ nav i.fa-bars {
 
 .bmi-calculator-wrapper .bmi-calculator form :where(input, select) {
     padding: 0.8rem;
-    background-color: var(--white-10);
+    background-color: var(--bg-dark2);
     border: none;
     border-radius: 0.5rem;
     color: var(--white-60);
+    width: 100%;
+    outline: none;
 }
 
 .bmi-calculator-wrapper .bmi-calculator form input::placeholder {
@@ -411,3 +427,71 @@ nav i.fa-bars {
 }
 
 /* Trainer Section Styles End */
+
+/* Footer Styles Start */
+footer {
+    background-color: var(--bg-dark);
+    padding-block: 4.13rem;
+}
+
+footer h2,
+footer p {
+    text-align: left !important;
+}
+
+footer h2 span {
+    color: var(--primary-color);
+    font-style: italic;
+    font-weight: 900;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+footer .footer-container .footer-content {
+    max-width: 28rem;
+    width: 50%;
+}
+
+footer .footer-container .footer-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+footer .footer-container .footer-links h3 {
+    font-size: var(--sub-title);
+    font-weight: 900;
+}
+
+footer .footer-container .footer-links ul {
+    margin-top: 2.44rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+footer .footer-container .footer-links ul a {
+    color: var(--white-50);
+}
+
+footer>p {
+    color: var(--white-60);
+    text-align: center !important;
+    padding-top: 2em;
+    border-top: 1px solid var(--white-10);
+    margin-top: 5rem;
+    font-size: 1.25rem;
+}
+
+footer>p span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Footer Styles End */
