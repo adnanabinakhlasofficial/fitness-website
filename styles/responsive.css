@@ -16,7 +16,8 @@
 
 
     #banner-section,
-    #extra-mile {
+    #extra-mile,
+    #bmi-calculator-section .bmi-section .bmi-calculator-wrapper {
         flex-direction: column;
     }
 
@@ -38,6 +39,14 @@
     #extra-mile .extra-mile-img {
         width: 100%;
     }
+
+    .bmi-calculator-wrapper .bmi-calculator form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bmi-calculator-wrapper .bmi-calculator form button {
+        place-self: normal;
+    }
 }
 
 
@@ -49,7 +58,8 @@
     }
 
     #banner-section,
-    #extra-mile {
+    #extra-mile,
+    #bmi-calculator-section .bmi-section .bmi-calculator-wrapper {
         flex-direction: column;
     }
 

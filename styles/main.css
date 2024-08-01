@@ -136,6 +136,7 @@ nav i.fa-bars {
 .banner-content span {
     font-family: var(--font-secondary);
     font-weight: normal;
+    font-size: 11rem;
 }
 
 .banner-content button:nth-child(4) {
@@ -206,7 +207,7 @@ nav i.fa-bars {
 
 /* Banner Section Styles End */
 
-/* Transform Section styles Start */
+/* Transform Section Styles Start */
 #transform-section .cards-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -241,9 +242,9 @@ nav i.fa-bars {
     font-size: 0.875rem;
 }
 
-/* Transform Section styles End */
+/* Transform Section Styles End */
 
-/* Extra Mile Section Start */
+/* Extra Mile Section Styles Start */
 #extra-mile {
     display: flex;
     justify-content: space-between;
@@ -281,4 +282,83 @@ nav i.fa-bars {
     transform: scale(2);
     transform-origin: 70% 25%;
 }
-/* Extra Mile Section End */
+/* Extra Mile Section Styles End */
+
+/* BMI Calculator section Styles Start */
+#bmi-calculator-section p {
+    margin-inline: auto;
+}
+
+#bmi-calculator-section .bmi-section {
+    background-color: var(--bg-dark);
+}
+
+#bmi-calculator-section .bmi-section h3 {
+    font-size: var(--sub-title);
+}
+
+#bmi-calculator-section .bmi-section .bmi-calculator-wrapper {
+    padding: 3.25rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.25rem;
+
+}
+
+.bmi-section .bmi-chart :where(table, tr, th, td) {
+    border: 1px solid var(--white-50);
+    border-collapse: collapse;
+    padding: 0.5rem;
+    text-align: left;
+    margin-top: 3.25rem;
+}
+
+.bmi-section .bmi-chart table td {
+    color: var(--white-50);
+}
+
+.bmi-calculator-wrapper .bmi-calculator form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+
+.bmi-calculator-wrapper .bmi-calculator form :where(input, select) {
+    padding: 0.8rem;
+    background-color: var(--white-10);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white-60);
+}
+
+.bmi-calculator-wrapper .bmi-calculator form input::placeholder {
+    color: var(--white-60);
+}
+
+.bmi-calculator-wrapper .bmi-calculator form input:focus {
+    border: none;
+    outline: none;
+    color: var(--white-60);
+}
+
+.bmi-calculator-wrapper .bmi-calculator form select {
+    border-right: 1rem solid transparent;
+}
+
+.bmi-calculator-wrapper .bmi-calculator form select:nth-child(5) {
+    grid-column: 1 / -1;
+}
+
+.bmi-calculator-wrapper .bmi-calculator form select::selection {
+    border: none;
+    outline: none;
+    background-color: var(--white-10);
+    color: var(--white-60);
+}
+
+.bmi-calculator-wrapper .bmi-calculator form button {
+    place-self: start;
+}
+/* BMI Calculator section Styles End */
