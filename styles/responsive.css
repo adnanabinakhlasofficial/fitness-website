@@ -1,5 +1,9 @@
 /* Mobile Device Responsive Styles */
 @media screen and (max-width: 576px) {
+    section {
+        margin-block: 50px;
+    }
+
     html {
         font-size: 10px;
     }
@@ -19,6 +23,7 @@
     #extra-mile,
     #bmi-calculator-section .bmi-section .bmi-calculator-wrapper {
         flex-direction: column;
+        align-items: start;
     }
 
     .banner-img .badge1 {
@@ -31,7 +36,8 @@
         left: -2%;
     }
 
-    #transform-section .cards-container {
+    #transform-section .cards-container,
+    #trainer .trainer-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -53,6 +59,10 @@
 
 /* Tablet Device Responsive Styles */
 @media screen and (min-width: 576px) and (max-width: 1024px) {
+    section {
+        margin-block: 80px;
+    }
+
     html {
         font-size: 14px;
     }
@@ -61,6 +71,7 @@
     #extra-mile,
     #bmi-calculator-section .bmi-section .bmi-calculator-wrapper {
         flex-direction: column;
+        align-items: start;
     }
 
     #banner-section .banner-content {
@@ -81,7 +92,8 @@
         left: -2%;
     }
 
-    #transform-section .cards-container {
+    #transform-section .cards-container,
+    #trainer .trainer-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
