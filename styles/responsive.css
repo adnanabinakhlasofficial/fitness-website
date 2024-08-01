@@ -15,11 +15,12 @@
     }
 
 
-    #banner-section {
+    #banner-section,
+    #extra-mile {
         flex-direction: column;
     }
 
-    .banner-img .badge1{
+    .banner-img .badge1 {
         top: 5%;
         right: -2%;
     }
@@ -32,26 +33,35 @@
     #transform-section .cards-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    #extra-mile .extra-mile-content,
+    #extra-mile .extra-mile-img {
+        width: 100%;
+    }
 }
 
 
 
 /* Tablet Device Responsive Styles */
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 1024px) {
     html {
         font-size: 14px;
     }
 
-    #banner-section {
+    #banner-section,
+    #extra-mile {
         flex-direction: column;
-        align-items: start;
+    }
+
+    #banner-section .banner-content {
+        align-self: start;
     }
 
     #banner-section .banner-img {
         align-self: center;
     }
 
-    .banner-img .badge1{
+    .banner-img .badge1 {
         top: 5%;
         right: -2%;
     }
@@ -63,5 +73,10 @@
 
     #transform-section .cards-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #extra-mile .extra-mile-content,
+    #extra-mile .extra-mile-img {
+        width: 100%;
     }
 }

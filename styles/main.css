@@ -59,7 +59,6 @@ body {
     letter-spacing: 0.1rem;
     margin-block: 1.75rem;
     max-width: 42rem;
-    margin-inline: auto;
 }
 
 section {
@@ -85,7 +84,7 @@ a {
 
 /* Navbar Styles Start */
 header {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(48,48,48,1) 90%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(48, 48, 48, 1) 90%);
 }
 
 nav {
@@ -215,6 +214,10 @@ nav i.fa-bars {
     margin-top: 3.62rem;
 }
 
+#transform-section p {
+    margin-inline: auto;
+}
+
 .cards-container .card {
     text-align: center;
     border: 1px solid var(--white-50);
@@ -239,3 +242,43 @@ nav i.fa-bars {
 }
 
 /* Transform Section styles End */
+
+/* Extra Mile Section Start */
+#extra-mile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-dark);
+    border-radius: 1.125rem;
+    padding: 1.75rem 2rem;
+    gap: 3.25rem;
+}
+
+#extra-mile .extra-mile-content {
+    width: 50%;
+}
+
+#extra-mile .extra-mile-content .title,
+#extra-mile .extra-mile-content .description {
+    text-align: left;
+}
+
+#extra-mile .extra-mile-content button {
+    width: 14rem;
+    font-size: 1.25rem;
+}
+
+#extra-mile .extra-mile-img {
+    overflow: hidden;
+    width: 50%;
+    border-radius: 1rem;
+}
+
+#extra-mile .extra-mile-img img {
+    border-radius: 0.5rem;
+    width: 100%;
+    vertical-align: middle;
+    transform: scale(2);
+    transform-origin: 70% 25%;
+}
+/* Extra Mile Section End */
