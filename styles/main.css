@@ -49,6 +49,7 @@ body {
     color: var(--white-color);
     font-size: 3rem;
     font-weight: 900;
+    text-align: center;
 }
 
 .description {
@@ -57,6 +58,12 @@ body {
     line-height: 1.5rem;
     letter-spacing: 0.1rem;
     margin-block: 1.75rem;
+    max-width: 42rem;
+    margin-inline: auto;
+}
+
+section {
+    margin-block: 100px;
 }
 
 a {
@@ -70,16 +77,15 @@ a {
     border-radius: 2.625rem;
     font-size: 1.125rem;
     font-weight: 600;
-    border: 1px solid transparent; 
+    border: 1px solid transparent;
     cursor: pointer;
 }
 
 /* Universal Styles End */
 
 /* Navbar Styles Start */
-
 header {
-    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(48,48,48,1) 90%);
 }
 
 nav {
@@ -118,8 +124,7 @@ nav i.fa-bars {
 /* Navbar Styles End */
 
 /* Banner Section Styles Start */
-
-#banner-section{
+#banner-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,15 +139,11 @@ nav i.fa-bars {
     font-weight: normal;
 }
 
-.banner-content button:nth-child(4){
+.banner-content button:nth-child(4) {
     background-color: transparent;
     border: 1px solid var(--white-color);
     margin-left: 0.88rem;
 }
-/* 
-.banner-img{
-    max-width: 60%;
-} */
 
 .banner-img .image-container {
     position: relative;
@@ -153,7 +154,7 @@ nav i.fa-bars {
     max-width: 100%;
 }
 
-.banner-img .badge{
+.banner-img .badge {
     font-size: 2.5rem;
     padding: 1rem 1.5rem;
     line-height: 2.5rem;
@@ -205,3 +206,36 @@ nav i.fa-bars {
 }
 
 /* Banner Section Styles End */
+
+/* Transform Section styles Start */
+#transform-section .cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.25rem;
+    margin-top: 3.62rem;
+}
+
+.cards-container .card {
+    text-align: center;
+    border: 1px solid var(--white-50);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+}
+
+.cards-container .card img {
+    border-radius: 50%;
+    margin-bottom: 1.88rem;
+}
+
+.cards-container .card .card-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.38rem;
+}
+
+.cards-container .card .card-content p {
+    color: var(--white-50);
+    font-size: 0.875rem;
+}
+
+/* Transform Section styles End */
