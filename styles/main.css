@@ -191,8 +191,8 @@ nav i.fa-bars {
 
 .banner-img .badge1 {
     position: absolute;
-    top: 20%;
-    right: -10%;
+    top: 26%;
+    right: -11%;
 }
 
 .banner-img .badge2 {
@@ -316,9 +316,7 @@ nav i.fa-bars {
     padding: 3.25rem 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 3.25rem;
-
 }
 
 .bmi-section .bmi-chart :where(table, tr, th, td) {
@@ -327,6 +325,7 @@ nav i.fa-bars {
     padding: 0.5rem;
     text-align: left;
     margin-top: 3.25rem;
+    width: 100%;
 }
 
 .bmi-section .bmi-chart table td {
@@ -358,6 +357,15 @@ nav i.fa-bars {
     border: none;
     outline: none;
     color: var(--white-60);
+}
+
+.bmi-calculator-wrapper .bmi-calculator form input::-webkit-outer-spin-button,
+.bmi-calculator-wrapper .bmi-calculator form input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.bmi-calculator-wrapper .bmi-calculator form input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
 }
 
 .bmi-calculator-wrapper .bmi-calculator form select {
@@ -427,6 +435,73 @@ nav i.fa-bars {
 }
 
 /* Trainer Section Styles End */
+
+/* Plan Section Styles Start */
+#plan-section .plan-content p {
+    margin-inline: auto;
+}
+
+.plan-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.25rem;
+    justify-content: space-around;
+    margin-top: 3.62rem;
+}
+
+.plan-cards-container .card {
+    background-color: var(--bg-dark);
+    padding: 2rem;
+    border-radius: 1.125rem;
+    text-align: center;
+    display: grid;
+    place-content: center;
+}
+.plan-cards-container .card h3 {
+    font-size: 1.875rem;
+    color: var(--white-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 2.5rem;
+}
+
+.plan-cards-container .card p:nth-child(2){
+    color: var(--white-50);
+    margin-bottom: 1.875rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.plan-cards-container .card p:nth-child(3) {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+}
+
+.plan-cards-container .card button {
+    place-self: center;
+}
+
+.plan-cards-container .card ul {
+    list-style: none;
+    margin: 1.25rem 0 2.5rem 0;
+    color: var(--white-50);
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+.plan-cards-container .card ul li {
+    margin-block: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.plan-cards-container .card ul li img{
+    vertical-align: middle;
+}
+/* Plan Section Styles End */
 
 /* Footer Styles Start */
 footer {
